@@ -1,4 +1,4 @@
-package dam_a51635.helloworld
+package dam_a51635.helloworldoptional
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -16,6 +16,6 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        println(getString(R.string.activity_oncreate_msg, this@MainActivity.localClassName))
+        this@MainActivity.
     }
 }
