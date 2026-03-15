@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">Hello World Optional</string>
-    <string name="manufacturer">Manufacturer: %1$s</string>
-    <string name="model">Model: %1$s</string>
-    <string name="brand">Brand: %1$s</string>
-    <string name="type">Type: %1$s</string>
-    <string name="base">Base: %1$s</string>
-    <string name="incremental">Incremental: %1$s</string>
-    <string name="SDK">SDK: %1$s</string>
-    <string name="version">Version Code: %1$s</string>
-    <string name="display">Display: %1$s</string>
+    <string name="system_info_template">
+        Manufacturer: %1$s\n
+        Model: %2$s\n
+        Brand: %3$s\n
+        Type: %4$s\n
+        User: %5$s\n
+        Base: %6$s\n
+        Incremental: %7$s\n
+        SDK: %8$d\n
+        Version Code: %9$s\n
+        Display: %10$s
+    </string>
 </resources>
