@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             Build.BRAND,
             Build.TYPE,
             Build.USER,
-            Build.VERSION.BASE_OS.ifEmpty { "1" }, 
+            Build.VERSION.BASE_OS.ifEmpty { "1" },
             Build.VERSION.INCREMENTAL,
             Build.VERSION.SDK_INT,
             Build.VERSION.RELEASE,
