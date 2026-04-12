@@ -35,7 +35,7 @@ fun main() {
         Event.Logout("alice", 1_400),
         Event.Logout("bob", 1_500)
     )
-    
+
     processEvents(events) { event ->
         when (event) {
             is Event.Login -> println("[ LOGIN ] ${event.username} logged in at t =${event.timestamp}")
