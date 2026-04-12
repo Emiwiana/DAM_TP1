@@ -1,6 +1,7 @@
 package dam_A51635.coolweatherapp
 
 import android.annotation.SuppressLint
+import android.content.res.Configuration
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -99,6 +100,23 @@ class MainActivity : AppCompatActivity() {
             if (resID != 0){
                 val drawable = this.getDrawable(resID);
                 weatherImage.setImageDrawable(drawable);
+            }
+
+            when (resources.configuration.orientation ) {
+                Configuration.ORIENTATION_PORTRAIT -> {
+                    if ( day) {
+                        setTheme(R.style.Theme_Day )
+                    } else {
+                        setTheme(R.style.Theme_Night )
+                    }
+                }
+                Configuration.ORIENTATION_LANDSCAPE -> {
+                    if ( day) {
+                        setTheme(R.style.Theme_Day_Land )
+                    } else {
+                        setTheme(R.style.Theme_Night_Land )
+                    }
+                }
             }
         }
     }

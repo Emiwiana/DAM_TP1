@@ -39,7 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/latitude"
-                    android:textColor="#262F33"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -52,7 +52,7 @@
                     android:hint="@string/_0_00"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal|numberSigned"
-                    android:textColor="#212121"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -64,7 +64,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/longitude"
-                    android:textColor="#262F33"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -77,7 +77,7 @@
                     android:hint="@string/_0_00"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal|numberSigned"
-                    android:textColor="#212121"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -89,7 +89,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/pressure"
-                    android:textColor="#262F33"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -99,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
-                    android:textColor="#212121"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -111,7 +111,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/wind_dir"
-                    android:textColor="#262F33"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -121,7 +121,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
-                    android:textColor="#212121"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -133,7 +133,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/wind_spd"
-                    android:textColor="#262F33"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -143,7 +143,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
-                    android:textColor="#212121"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -155,7 +155,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/temp"
-                    android:textColor="#262F33"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -165,7 +165,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
-                    android:textColor="#212121"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -177,7 +177,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/time"
-                    android:textColor="#262F33"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -187,7 +187,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
-                    android:textColor="#212121"
+                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -201,9 +201,9 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#6200EA"
+        android:backgroundTint="@color/button_light"
         android:text="@string/update_weather"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:cornerRadius="30dp"
@@ -217,9 +217,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="Cool Weather App"
+        android:text="@string/cool_weather_app"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
