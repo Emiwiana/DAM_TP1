@@ -94,13 +94,13 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tvSeaLevelPressure"
+                    android:id="@+id/pressureValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="end"
+                    android:text="@string/not_found"
                     android:textColor="#212121"
-                    android:textSize="20sp"
-                    tools:text="" />
+                    android:textSize="20sp" />
             </TableRow>
 
             <TableRow
@@ -116,13 +116,13 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tvWindDirection"
+                    android:id="@+id/windDirectionValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="end"
+                    android:text="@string/not_found"
                     android:textColor="#212121"
-                    android:textSize="20sp"
-                    tools:text="" />
+                    android:textSize="20sp" />
             </TableRow>
 
             <TableRow
@@ -138,13 +138,13 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tvWindSpeed"
+                    android:id="@+id/windSpeedValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="end"
+                    android:text="@string/not_found"
                     android:textColor="#212121"
-                    android:textSize="20sp"
-                    tools:text="" />
+                    android:textSize="20sp" />
             </TableRow>
 
             <TableRow
@@ -160,13 +160,13 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tvTemperature"
+                    android:id="@+id/temperatureValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="end"
+                    android:text="@string/not_found"
                     android:textColor="#212121"
-                    android:textSize="20sp"
-                    tools:text="" />
+                    android:textSize="20sp" />
             </TableRow>
 
             <TableRow
@@ -182,13 +182,13 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tvTime"
+                    android:id="@+id/timeValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="end"
+                    android:text="@string/not_found"
                     android:textColor="#212121"
-                    android:textSize="16sp"
-                    tools:text="" />
+                    android:textSize="20sp" />
             </TableRow>
 
         </TableLayout>
