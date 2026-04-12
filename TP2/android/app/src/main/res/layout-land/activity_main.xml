@@ -8,6 +8,18 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/weatherImage"
+        android:layout_width="162dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
+        app:layout_constraintEnd_toStartOf="@+id/weatherDataCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@android:drawable/ic_dialog_alert" />
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/weatherDataCard"
         android:layout_width="0dp"
@@ -42,15 +54,14 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <EditText
+                <TextView
                     android:id="@+id/etLatitude"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@null"
                     android:gravity="end"
-                    android:hint="@string/_0_00"
+                    android:text="@string/not_found"
                     android:importantForAutofill="no"
-                    android:inputType="numberDecimal|numberSigned"
                     android:textColor="#212121"
                     android:textSize="20sp" />
             </TableRow>
@@ -67,15 +78,14 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <EditText
+                <TextView
                     android:id="@+id/etLongitude"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@null"
                     android:gravity="end"
-                    android:hint="@string/_0_00"
+                    android:text="@string/not_found"
                     android:importantForAutofill="no"
-                    android:inputType="numberDecimal|numberSigned"
                     android:textColor="#212121"
                     android:textSize="20sp" />
             </TableRow>
@@ -221,7 +231,8 @@
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-7dp" />
+        app:layout_constraintEnd_toStartOf="@+id/weatherDataCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
