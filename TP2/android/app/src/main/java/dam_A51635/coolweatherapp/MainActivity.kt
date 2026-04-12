@@ -17,6 +17,8 @@ import java.net.URL
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Theme_Night)
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
@@ -75,7 +77,6 @@ class MainActivity : AppCompatActivity() {
             val temperatureText = request.current_weather.temperature.toString()+ " ºC"
             var timeText = request.current_weather.time
 
-
             pressure.text = pressureText
             windSpeed.text = windSpeedText
             windDirection.text = windDirectionText
@@ -84,6 +85,12 @@ class MainActivity : AppCompatActivity() {
 
             val hour = (request.current_weather.time[11].toString() +  request.current_weather.time[12].toString()).toInt()
             val day = hour in 8..<20
+
+            if (day) {
+                setTheme(R.style.Theme_Day)
+            } else {
+                setTheme(R.style.Theme_Night)
+            }
 
             val mapt = getWeatherCodeMap();
             val wCode = mapt[request.current_weather.weathercode]
@@ -102,22 +109,6 @@ class MainActivity : AppCompatActivity() {
                 weatherImage.setImageDrawable(drawable);
             }
 
-            when (resources.configuration.orientation ) {
-                Configuration.ORIENTATION_PORTRAIT -> {
-                    if ( day) {
-                        setTheme(R.style.Theme_Day )
-                    } else {
-                        setTheme(R.style.Theme_Night )
-                    }
-                }
-                Configuration.ORIENTATION_LANDSCAPE -> {
-                    if ( day) {
-                        setTheme(R.style.Theme_Day_Land )
-                    } else {
-                        setTheme(R.style.Theme_Night_Land )
-                    }
-                }
-            }
         }
     }
 

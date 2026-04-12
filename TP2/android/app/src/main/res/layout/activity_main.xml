@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     android:padding="20dp"
     tools:context=".MainActivity">
 
@@ -13,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="90dp"
-        app:cardBackgroundColor="#FFFFFF"
+        app:cardBackgroundColor="?attr/colorSurface"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +24,7 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#73CBD0FA"
+            android:background="?attr/background"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp"
             android:shrinkColumns="0"
@@ -39,7 +38,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/latitude"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -52,7 +50,6 @@
                     android:hint="@string/_0_00"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal|numberSigned"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -64,7 +61,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/longitude"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -77,7 +73,6 @@
                     android:hint="@string/_0_00"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal|numberSigned"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -89,7 +84,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/pressure"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -99,7 +93,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -111,7 +104,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/wind_dir"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -121,7 +113,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -133,7 +124,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/wind_spd"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -143,7 +133,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -155,7 +144,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/temp"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -165,7 +153,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -177,7 +164,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/time"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -187,7 +173,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
-                    android:textColor="@color/text_light"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -201,9 +186,9 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="@color/button_light"
+        app:backgroundTint="?attr/colorPrimary"
         android:text="@string/update_weather"
-        android:textColor="@color/white"
+        android:textColor="?attr/colorOnPrimary"
         android:textSize="18sp"
         android:textStyle="bold"
         app:cornerRadius="30dp"
@@ -219,7 +204,6 @@
         android:fontFamily="sans-serif-black"
         android:text="@string/cool_weather_app"
         android:textAlignment="center"
-        android:textColor="@color/white"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
