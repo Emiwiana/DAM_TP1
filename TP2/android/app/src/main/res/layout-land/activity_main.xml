@@ -54,15 +54,15 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <EditText
                     android:id="@+id/etLatitude"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@null"
                     android:gravity="end"
-                    android:text="@string/not_found"
+                    android:hint="@string/_0_00"
                     android:importantForAutofill="no"
-                    android:textColor="#212121"
+                    android:inputType="numberDecimal|numberSigned"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -78,15 +78,15 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <EditText
                     android:id="@+id/etLongitude"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@null"
                     android:gravity="end"
-                    android:text="@string/not_found"
+                    android:hint="@string/_0_00"
                     android:importantForAutofill="no"
-                    android:textColor="#212121"
+                    android:inputType="numberDecimal|numberSigned"
                     android:textSize="20sp" />
             </TableRow>
 

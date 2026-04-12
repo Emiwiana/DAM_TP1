@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             var latitude: Float = latitudeText.text.toString().toFloat()
             var longitude = longitudeText.text.toString().toFloat()
 
-            if(latitude in -180f..<180f && longitude in -180f..<180f)
+            if(latitude in -90f..<90f && longitude in -180f..<180f)
                 fetchWeatherData(latitude, longitude).start()
         }
     }
@@ -100,23 +100,6 @@ class MainActivity : AppCompatActivity() {
             if (resID != 0){
                 val drawable = this.getDrawable(resID);
                 weatherImage.setImageDrawable(drawable);
-            }
-
-            when (resources.configuration.orientation ) {
-                Configuration.ORIENTATION_PORTRAIT -> {
-                    if ( day) {
-                        setTheme(R.style.Theme_Day )
-                    } else {
-                        setTheme(R.style.Theme_Night )
-                    }
-                }
-                Configuration.ORIENTATION_LANDSCAPE -> {
-                    if ( day) {
-                        setTheme(R.style.Theme_Day_Land )
-                    } else {
-                        setTheme(R.style.Theme_Night_Land )
-                    }
-                }
             }
         }
     }
