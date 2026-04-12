@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:padding="20dp"
     tools:context=".MainActivity">
 
@@ -25,7 +26,7 @@
         android:layout_height="276dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="4dp"
-        app:cardBackgroundColor="?attr/colorSurface"
+        app:cardBackgroundColor="#FFFFFF"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +36,7 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="?attr/background"
+            android:background="#73CBD0FA"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp"
             android:shrinkColumns="0"
@@ -49,18 +50,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/latitude"
+                    android:textColor="#262F33"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <EditText
+                <TextView
                     android:id="@+id/etLatitude"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@null"
                     android:gravity="end"
-                    android:hint="0.00"
+                    android:text="@string/not_found"
                     android:importantForAutofill="no"
-                    android:inputType="numberDecimal|numberSigned"
+                    android:textColor="#212121"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -72,18 +74,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/longitude"
+                    android:textColor="#262F33"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <EditText
+                <TextView
                     android:id="@+id/etLongitude"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@null"
                     android:gravity="end"
-                    android:hint="0.00"
+                    android:text="@string/not_found"
                     android:importantForAutofill="no"
-                    android:inputType="numberDecimal|numberSigned"
+                    android:textColor="#212121"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -95,6 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/pressure"
+                    android:textColor="#262F33"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -104,6 +108,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -115,6 +120,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/wind_dir"
+                    android:textColor="#262F33"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -124,6 +130,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
+                    android:textColor="#212121"
                     android:textSize="20sp"
                     />
             </TableRow>
@@ -136,6 +143,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/wind_spd"
+                    android:textColor="#262F33"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -145,6 +153,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
+                    android:textColor="#212121"
                     android:textSize="20sp"
                     />
             </TableRow>
@@ -157,6 +166,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/temp"
+                    android:textColor="#262F33"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -166,6 +176,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
+                    android:textColor="#212121"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -177,6 +188,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/time"
+                    android:textColor="#262F33"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -186,6 +198,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/not_found"
+                    android:textColor="#212121"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -197,9 +210,9 @@
         android:layout_width="0dp"
         android:layout_height="58dp"
         android:layout_marginHorizontal="16dp"
-        app:backgroundTint="?attr/colorPrimary"
+        android:backgroundTint="#6200EA"
         android:text="@string/update_weather"
-        android:textColor="?attr/colorOnPrimary"
+        android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
         app:cornerRadius="30dp"
@@ -215,6 +228,7 @@
         android:fontFamily="sans-serif-black"
         android:text="Cool Weather App"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/weatherDataCard"
