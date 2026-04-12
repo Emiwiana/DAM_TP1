@@ -10,16 +10,15 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/weatherDataCard"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="90dp"
+        android:layout_width="0dp"
+        android:layout_height="276dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="4dp"
         app:cardBackgroundColor="#FFFFFF"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.35"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent">
 
         <TableLayout
@@ -196,11 +195,9 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnUpdate"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="32dp"
         android:backgroundTint="#6200EA"
         android:text="@string/update_weather"
         android:textColor="#FFFFFF"
@@ -209,22 +206,20 @@
         app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weatherDataCard" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="289dp"
+        android:layout_height="90dp"
         android:fontFamily="sans-serif-black"
         android:text="Cool Weather App"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="48sp"
+        android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-7dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
